@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".LupaActivity">
+
+    <TableRow
+        android:id="@id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/b_lupa"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/ic_lupa"
+            android:gravity="center"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:theme="@style/AppBaseTheme"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.example.carminhasandiego.NSpinner
+            android:id="@id/s_time"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_timemachine"
+            android:backgroundTint="#FFFFFF"
+            android:entries="@array/a_periodos"
+            android:foreground="@drawable/ic_timemachine"
+            android:foregroundTint="#FFFFFF"
+            android:gravity="center"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:spinnerMode="dropdown"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@id/b_calc"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/ic_computer"
+            android:gravity="center"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            app:icon="@drawable/ic_computer"
+            app:iconSize="100dp"
+            app:iconTint="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+
+
+    <TextView
+        android:id="@+id/t_espaçotempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Espaçotempo: Agência, ∞"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t_periodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Período:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t_espaçotempo" />
+
+    <TextView
+        android:id="@+id/t_performance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="Performance"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:text="A+"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t_performance" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="185dp"
+        android:onClick="f_pegadas_e"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_autor_machadodeassis"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="401dp"
+        android:layout_height="249dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_periodo"
+        app:srcCompat="@drawable/ic_balao" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="302dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/csms"
+        android:text="A anomlia no espaçotempo literário está ocorrendo em uma época de muito nacionalismo, havendo exaltação ao índio. Nesse período da história..."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

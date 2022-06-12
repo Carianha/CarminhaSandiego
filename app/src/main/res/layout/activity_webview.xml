@@ -1,0 +1,72 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </WebView>
+
+    <TableRow
+        android:id="@id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/b_lupa"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/ic_lupa"
+            android:gravity="center"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:theme="@style/AppBaseTheme"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.example.carminhasandiego.NSpinner
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_timemachine"
+            android:backgroundTint="#FFFFFF"
+            android:foreground="@drawable/ic_timemachine"
+            android:foregroundTint="#FFFFFF"
+            android:gravity="center"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:spinnerMode="dropdown"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/ic_computer"
+            android:gravity="center"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            app:icon="@drawable/ic_computer"
+            app:iconSize="100dp"
+            app:iconTint="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

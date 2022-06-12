@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">CarminhaSandiego</string>
+    <string name="novo_jogo">Novo jogo</string>
+    <string-array name="a_periodos">
+        <item>Quinhentismo</item>
+        <item>Arcadismo</item>
+        <item>Romantismo</item>
+    </string-array>
+
+    <string-array name="a_genero">
+        <item></item>
+        <item>Prosa</item>
+        <item>Poesia</item>
+    </string-array>
+
+    <string-array name="a_prosa_tema">
+        <item></item>
+        <item>Romance</item>
+        <item>Drama</item>
+        <item>Ficção Científica</item>
+        <item>Relato</item>
+        <item>Crítica</item>
+    </string-array>
+
+    <string-array name="a_prosa_lugar">
+        <item></item>
+        <item>Nordeste</item>
+        <item>Rio de Janeiro</item>
+        <item>São Paulo</item>
+        <item>Colônia</item>
+        <item>Ficcional</item>
+    </string-array>
+
+    <string-array name="a_prosa_objetivo">
+        <item></item>
+        <item>Nacionalismo</item>
+        <item>Críticar a sociedade</item>
+        <item>Exaltação ao Índio</item>
+        <item>Abolicionista</item>
+    </string-array>
+
+    <string-array name="a_prosa_final">
+        <item></item>
+        <item>Feliz</item>
+        <item>Triste</item>
+        <item>Supreendente</item>
+    </string-array>
+
+    <string-array name="a_poesia_objetivo">
+        <item></item>
+        <item>Desconstruir</item>
+        <item>Inovar</item>
+        <item>Criticar</item>
+    </string-array>
+
+    <string-array name="a_poesia_estrutua">
+        <item></item>
+        <item>Forma fixa</item>
+        <item>Forma livre</item>
+
+    </string-array>
+
+    <string-array name="a_poesia_tipos">
+        <item></item>
+        <item>Poemas líricos</item>
+        <item>Poemas épicos</item>
+        <item>Poemas narrativos</item>
+    </string-array>
+
+    <string-array name="a_poesia_movimento">
+        <item></item>
+        <item>Poemas líricos</item>
+        <item>Poemas épicos</item>
+        <item>Poema narrativos</item>
+    </string-array>
+
+</resources>

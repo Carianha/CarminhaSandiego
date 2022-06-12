@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    android:background="#000000"
+    tools:context=".LupaActivity">
+
+    <TableRow
+        android:id="@id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/b_lupa"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/ic_lupa"
+            android:gravity="center"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:theme="@style/AppBaseTheme"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.example.carminhasandiego.NSpinner
+            android:id="@id/s_time"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_timemachine"
+            android:backgroundTint="#FFFFFF"
+            android:entries="@array/a_periodos"
+            android:foreground="@drawable/ic_timemachine"
+            android:foregroundTint="#FFFFFF"
+            android:gravity="center"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:spinnerMode="dropdown"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@id/b_calc"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/ic_computer"
+            android:gravity="center"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            app:icon="@drawable/ic_computer"
+            app:iconSize="100dp"
+            app:iconTint="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/t_espaçotempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Espaçotempo: Agência, ∞"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t_periodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Período:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t_espaçotempo" />
+
+    <TextView
+        android:id="@+id/t_performance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="Performance"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:text="A+"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t_performance" />
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.example.carminhasandiego.NSpinner
+        android:id="@+id/s_dica1"
+        style="@android:style/Widget.DeviceDefault.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#E8E2E2"
+        android:entries="@array/a_genero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <com.example.carminhasandiego.NSpinner
+        android:id="@+id/s_dica2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#E8E2E2"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_dica2" />
+
+    <com.example.carminhasandiego.NSpinner
+        android:id="@+id/s_dica3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#E8E2E2"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_dica3" />
+
+    <com.example.carminhasandiego.NSpinner
+        android:id="@+id/s_dica4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#E8E2E2"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_dica4" />
+
+    <com.example.carminhasandiego.NSpinner
+        android:id="@+id/s_dica5"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#E8E2E2"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_dica5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="0dp"
+        android:text="Gênero literário"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/s_dica1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_periodo" />
+
+
+
+    <TextView
+        android:id="@+id/t_dica2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="20dp"
+        android:text="dica2"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_dica1" />
+
+    <TextView
+        android:id="@+id/t_dica3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="20dp"
+        android:text="dica3"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_dica2" />
+
+
+    <TextView
+        android:id="@+id/t_dica4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="20dp"
+        android:text="dica4"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_dica3" />
+
+    <TextView
+        android:id="@+id/t_dica5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="20dp"
+        android:text="dica5"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_dica4" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="154dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginEnd="178dp"
+        android:text="Analizar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

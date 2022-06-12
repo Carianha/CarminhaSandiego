@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Carminha Sandiego</title>
+
+<style>
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('pressstart2p-regular.ttf');
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background:#000;
+  line-height:20px;
+}
+button {
+  background-color: #f4fc67;
+  font-family: 'Press Start 2P', cursive;
+  box-shadow:2px 2px #000;
+  border:1px solid #000;
+  outline:none;
+  font-size:14px;
+  padding:3px 3px;
+  margin: 58px 0 0 120px;
+  z-index: 2;
+}
+button:hover {
+  box-shadow:5px 5px #000;
+}
+button:focus {
+  outline:0 !important;
+}
+.cs-instructions {
+  background-size: contain;
+  background-image: url('1woliuF.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height:380px;
+  width: 350px;
+  margin: auto;
+  z-index: 2;
+}
+
+.cs-instructions-inner {
+  background-size: contain;
+  background-color:#fff;
+  background-image: url('6aOej4c.jpg');
+  background-repeat:repeat-y;
+  background-position: bottom;
+  margin: 0 0px 0 18px;
+  padding:0 15px 0 23px;
+  height:240px;
+  width:280px;
+  font-size:12px;
+  line-height:35px;
+  color:#000;
+  z-index: 1;
+}
+textarea {
+  font-size:12px;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    overflow:hidden;
+    font-family: 'Press Start 2P', cursive;
+    scrollTop: 9999;
+}
+</style>
+
+
+</head>
+<body>
+
+
+<div  class="cs-instructions">
+    <textarea class="cs-instructions-inner" id="transcribe" disabled="true">  </textarea>
+    <button onclick="start()" id="botaoInicio">Iniciar</button>
+</div>
+
+<audio loop=true; id="somMaquina">
+    <source src="138049_2423928-lq.mp3" type="audio/mpeg">
+</audio>
+
+
+</body>
+<script type="text/javascript" src="main.js"></script>
+
+</html>
